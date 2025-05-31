@@ -42,6 +42,7 @@ h1 {
   text-align: center;
 }
 
+/*
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -54,6 +55,8 @@ h1 {
 .logo.vanilla:hover {
   filter: drop-shadow(0 0 2em #3178c6aa);
 }
+  */
+
 
 .card {
   padding: 2em;
@@ -93,4 +96,75 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+ 
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+iframe {
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#overlay {
+  position: fixed;              /* Float it */
+  top: 1rem;                    /* Distance from top */
+  right: 1rem;                  /* Distance from right */
+  z-index: 2;
+  color: white;
+  text-align: right;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;             /* Inter Light */
+  /*pointer-events: none;         /* Make non-clickable */
+  max-width: 90vw;              /* Prevent overflow on mobile */
+}
+
+#secret-link {
+  display: none;
+  margin-top: 1rem;
+}
+
+.cf-turnstile {
+  margin-top: 2rem;
+}
+
+#click-catcher {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  cursor: pointer;
+}
+
+.heading-row {
+  width: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* aligns vertically */
+  gap: 1rem; /* optional spacing between elements */
+}
+
+.heading-row h1,
+.heading-row h2,
+.heading-row h3,
+.heading-row h4 {
+  margin: 0; /* remove default margins */
 }
