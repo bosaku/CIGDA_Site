@@ -124,7 +124,7 @@ iframe {
 #overlay {
   position: fixed;              /* Float it */
   top: 10rem;                    /* Distance from top */
-  left: 5rem;                  /* Distance from right */
+  left: 3rem;                  /* Distance from right */
   z-index: 2;
   color: white;
   text-align: right;
