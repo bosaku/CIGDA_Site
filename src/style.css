@@ -123,8 +123,8 @@ iframe {
 
 #overlay {
   position: fixed;              /* Float it */
-  top: 1rem;                    /* Distance from top */
-  right: 1rem;                  /* Distance from right */
+  top: 10rem;                    /* Distance from top */
+  left: 5rem;                  /* Distance from right */
   z-index: 2;
   color: white;
   text-align: right;
@@ -158,7 +158,7 @@ iframe {
   width: 400;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* aligns vertically */
+  align-items: left; /* aligns vertically */
   gap: 1rem; /* optional spacing between elements */
 }
 
